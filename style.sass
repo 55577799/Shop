@@ -1,0 +1,2140 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap&subset=latin-ext")
+
+html,
+body
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+@media screen and (max-width: 600px)
+  .header
+    width: 100%
+    display: flex
+
+.sidebar
+  width: 138px
+  height: auto
+  position: relative
+
+  a
+    color: black
+    text-decoration: none
+
+  @media screen and (max-width: 400px)
+    .sidebar a
+    text-align: center
+      float: none
+
+  .main_item_menu
+    list-style-type: none
+    margin-bottom: 20px
+
+  .products_right_part
+    max-width: 75%
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-top: 16px
+
+  .left_subscribe
+    img
+      animation: rotate-scale-up 2s infinite ease-in-out
+      animation-iteration-count: 1
+
+.header
+  margin-top: 35px
+
+.container
+  display: flex
+  width: 1140px
+  flex-flow: row nowrap
+  margin: 0 auto
+  text-align: center
+
+  .left_part
+    display: flex
+    flex-direction: row
+    align-items: center
+
+  .right_part
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: flex-end
+
+  & > .dropdown
+    margin: 0 20px
+    vertical-align: top
+
+.logo
+  background: url(img/logo.svg) no-repeat
+  width: 59px
+  height: 51px
+  transition: transform 1s
+
+  &:hover
+    transform: scale(1.5)
+
+.brandname
+  font-size: 27px
+  font-weight: 300
+  text-transform: uppercase
+  font-family: "Lato"
+  letter-spacing: 0.25mm
+  margin-left: 13px
+  transition: transform 1s
+
+  &:hover
+    transform: scale(1.5)
+
+.highlite_symbol
+  color: #f16d7f
+  font-weight: 400
+
+.search-container
+  width: 400px
+  border-radius: 3px
+  border: 1px solid #e6e6e6
+  height: 40px
+  margin-left: 37px
+
+  .button
+    display: inline-block
+
+button
+  cursor: pointer
+  border: none
+  outline: none
+  background-color: #f6f6f6
+  display: block
+
+.search
+  height: 100%
+  border: none
+  outline: none
+  width: 70%
+  padding-left: 15px
+  font-size: 14px
+  border-right: 1px solid #e6e6e6
+
+.left_part
+  .button
+    a
+      text-align: center
+      text-decoration: none
+      color: #222222
+      font-family: Lato
+      font-size: 14px
+      font-weight: 300
+      line-height: 32px
+      letter-spacing: 0.35px
+      padding-left: 8px
+
+.browse
+  width: 20%
+  border-right: 1px solid #e6e6e6
+  height: 100%
+  color: #f6f6f6
+
+.drop
+  padding: 10px 20px
+  display: block
+  position: absolute
+  top: 90px
+  border-radius: 5px
+  background-color: #fff
+  border: 1px solid grey
+  padding: 20px
+  width: 262px
+  border-radius: 5px
+  background-color: #ffffff
+  position: absolute
+  z-index: 10
+  display: none
+
+  &:before
+    content: ""
+    display: block
+    width: 10px
+    height: 10px
+    background-color: #fff
+    position: absolute
+    top: -6px
+    left: 31px
+    transform: rotate(45deg)
+    border-top: 1px solid #e8e8e8
+    border-left: 1px solid #e8e8e8
+
+.drop_link
+  a
+    text-decoration: none
+    color: #6f6e6e
+    font-family: Lato
+    font-size: 14px
+    font-weight: 400
+    line-height: 33px
+    list-style-type: none
+
+  &:hover
+    color: #f16d7f
+
+.menu__list
+  position: relative
+  text-align: left
+  bottom: 10px
+  position: relative
+  text-align: left
+  bottom: 10px
+
+  &:hover
+    .drop
+      display: block
+
+    .drop1
+      display: block
+
+  a
+    color: #646464
+    font-family: Lato
+    font-size: 14px
+    font-weight: 400
+    line-height: 28px
+    letter-spacing: 0.35px
+
+.drop__menu
+  list-style-type: none
+  padding-right: 32px
+
+.drop_flex
+  &:last-of-type
+    margin-right: 0
+
+.drop__h3
+  border-bottom: 1px solid #e8e8e8
+  color: #232323
+  font-family: Lato
+  font-size: 14px
+  font-weight: 400
+  line-height: 32px
+  text-transform: uppercase
+  letter-spacing: 0.35px
+  text-align: left
+  margin-bottom: 20px
+
+.basket
+  width: 32px
+  height: 29px
+  margin-right: 27px
+
+.drop_down_basket
+  display: block
+  flex-direction: column
+  width: 262px
+  flex-wrap: nowrap
+  height: 440px
+  border-radius: 5px
+  background-color: #ffffff
+  margin-top: 20px
+  position: relative
+  right: 20px
+
+  &:before
+    content: ""
+    display: block
+    width: 10px
+    height: 10px
+    background-color: #fff
+    position: absolute
+    top: -6px
+    left: 31px
+    transform: rotate(45deg)
+    border-top: 1px solid #e8e8e8
+    border-left: 1px solid #e8e8e8
+
+  .number2
+    width: 20px
+    margin-top: 35px
+    margin-bottom: 30px
+    width: 262px
+    text-align: left
+    border: none
+    outline: none
+    padding-left: 18px
+
+.buy1
+  display: flex
+  flex-direction: row
+  flex-wrap: nowrap
+  border-bottom: 1px solid rgb(241, 240, 240)
+
+.left_buy1
+  display: inline-flex
+  flex-direction: column
+  width: 100%
+  justify-content: flex-start
+  align-items: flex-start
+  margin-left: 18px
+
+.right_buy1
+  display: inline-flex
+  flex-direction: column
+  justify-content: flex-start
+  align-items: flex-start
+  width: 100%
+  flex-wrap: nowrap
+
+  .purchase
+    display: block
+    flex-direction: row
+    justify-content: flex-start
+    align-items: flex-start
+    color: #222222
+    font-family: Lato
+    font-size: 12px
+    font-weight: 700
+    text-transform: uppercase
+    text-align: left
+    margin-bottom: 5px
+
+  img
+    margin-bottom: 5px
+
+.basket:focus ~ .drop_down_basket,
+.basket:active ~ .drop_down_basket .drop_down_basket:hover
+  display: block
+
+.order
+  .button2
+    display: block
+    flex-direction: column
+
+.button2
+  width: 225px
+  height: 50px
+  border-radius: 5px
+  background-color: #ffffff
+  border: 1px solid #f16d7f
+  color: #4a4a4a
+  font-family: Lato
+  font-size: 14px
+  font-weight: 700
+  text-transform: uppercase
+  margin-bottom: 10px
+  margin-left: 15px
+
+  span
+    color: #f16d7f
+    font-family: Lato
+    font-size: 14px
+    font-weight: 700
+    text-transform: uppercase
+
+.button3
+  width: 225px
+  height: 50px
+  border: 1px solid #eaeaea
+  color: #4a4a4a
+  background-color: #ffffff
+  font-family: Lato
+  font-size: 14px
+  font-weight: 700
+  text-transform: uppercase
+  margin-bottom: 0
+  margin-left: 15px
+
+.right_part
+  .button
+    width: 130px
+    height: 38px
+    background-color: #f16d7f
+    flex-direction: row
+
+    a
+      text-decoration: none
+      color: #ffffff
+      font-family: Lato
+      font-size: 15px
+      font-weight: 400
+      line-height: 32px
+      letter-spacing: 0.38px
+      padding-left: 19px
+
+.menu
+  display: flex
+  width: 100%
+  justify-content: center
+  margin-top: 30px
+  border-top: 1px solid #ececec
+  padding-top: 20px
+  padding-bottom: 22px
+
+.nav_menu
+  display: flex
+  justify-content: space-between
+  width: 50%
+  list-style-type: none
+  align-items: center
+
+  a
+    text-decoration: none
+    color: #222222
+    font-family: Lato
+    font-size: 14px
+    font-weight: 700
+    line-height: 26px
+    text-transform: uppercase
+    margin-bottom: 22px
+
+.drop1
+  padding: 10px 20px
+  display: flex
+  position: absolute
+  top: 160px
+  margin-left: 55px
+  border-radius: 5px
+  background-color: #fff
+  border: 1px solid grey
+  padding: 20px
+  width: 262px
+  height: 538px
+  border-radius: 5px
+  background-color: #ffffff
+  width: 716px
+  height: 360px
+
+  &:before
+    content: ""
+    display: block
+    width: 10px
+    height: 10px
+    background-color: #fff
+    position: absolute
+    top: -6px
+    left: 31px
+    transform: rotate(45deg)
+    border-top: 1px solid #e8e8e8
+    border-left: 1px solid #e8e8e8
+
+.drop1__link
+  text-decoration: none
+  line-height: 28px
+
+  a
+    text-decoration: none
+    list-style-type: none
+
+  &:hover
+    color: #f16d7f
+
+.drop1__menu
+  list-style-type: none
+  padding-right: 32px
+
+.drop1__flex
+  margin-right: 46px
+
+  &:last-of-type
+    margin-right: 0
+
+.drop1__h3
+  border-bottom: 1px solid #e8e8e8
+  color: #232323
+  font-family: Lato
+  font-size: 14px
+  font-weight: 400
+  line-height: 32px
+  text-transform: uppercase
+  letter-spacing: 0.35px
+  text-align: left
+  margin-bottom: 20px
+  padding: 8px 0
+
+.brand
+  background-image: url(img/men.png)
+  width: 100%
+  margin-bottom: 98px
+
+.text_brand
+  border-left: 12px solid #f16d7f
+  padding-left: 13px
+  font-family: "Lato"
+  margin: 224px 0 297px 0
+
+.text_brand1
+  font-size: 60px
+  letter-spacing: 1.5px
+  font-weight: 900
+  text-align: left
+
+.text_brand2
+  letter-spacing: 1px
+  font-size: 40px
+  font-weight: 900
+
+  span
+    color: #f16d7f
+    letter-spacing: 1px
+
+.offer
+  height: 823px
+  margin-top: 100px
+  font-weight: 900
+  font-family: "Lato"
+  text-transform: uppercase
+  margin-bottom: 100px
+
+.offer__content
+  width: 50%
+  flex-direction: column
+  display: flex
+  justify-content: space-between
+  text-align: left
+
+.offer__content_big1
+  background: url(img/men1.png) top center / cover
+  width: 96.5%
+  height: 542px
+
+.offer__content_mini1
+  background: url(img/wallet.png) top center / cover
+  width: 96.5%
+  height: 261px
+
+.offer__content__mini2
+  background: url(img/women.png) top center / cover
+  width: 96.5%
+  height: 261px
+
+.offer__content_big2
+  background: url(img/child.png) top center / cover
+  width: 96.5%
+  height: 542px
+
+.hot_deal
+  font-size: 18px
+
+.product_name
+  font-size: 30px
+  color: #f16d7f
+
+.product_text
+  background-color: #fff
+  display: inline-flex
+  padding: 16px 21px 16px 19px
+  margin-top: 25px
+  justify-content: flex-start
+  align-items: flex-start
+
+.center
+  text-align: center
+
+.featured_items_container
+  display: flex
+  justify-content: center
+
+.featured_items
+  margin-bottom: 60px
+
+.featured1
+  color: #222222
+  font-family: Lato
+  font-size: 30px
+  font-weight: 700
+  letter-spacing: 0.75px
+  margin-bottom: 10px
+
+.featured2
+  color: #9f9f9f
+  font-family: Lato
+  font-size: 14px
+  font-weight: 400
+  letter-spacing: 0.35px
+
+.cards
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  flex-wrap: wrap
+
+.product_item
+  background-color: #ffffff
+  transition: all 0.2s ease
+  margin-bottom: 39px
+  position: relative
+  width: 261px
+
+  &:hover
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
+    filter: brightness(50%)
+
+    .product_add
+      display: block
+
+.filter
+  height: 279px
+  width: 100%
+  background-color: rgba(00, 00, 00, 0.5)
+
+.product_list
+  h3
+    color: #222222
+    font-family: Lato
+    font-size: 14px
+    font-weight: 400
+    text-transform: uppercase
+    padding-bottom: 10px
+    padding-left: 30px
+
+  .price
+    color: #f16d7f
+    font-family: Lato
+    font-size: 16px
+    font-weight: 700
+    text-transform: uppercase
+    padding-left: 30px
+    margin-bottom: 21px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
+  .p
+    img
+      display: none
+      margin-left: 116px
+
+.product_add
+  position: absolute
+  text-decoration: none
+  display: block
+  top: 98px
+  left: 70px
+  display: none
+  width: 123px
+  height: 39px
+  border: 2px solid #ffffff
+  color: white
+
+  &:hover
+    box-shadow: 0 0 20px #fff
+
+  a
+    font-family: Lato
+    font-size: 13px
+    font-weight: 700
+    text-align: center
+    color: white
+    margin: 108px 158px 151px 82px
+
+  img
+    width: 23px
+    height: 22px
+    margin-right: 8px
+    align-items: center
+
+.browse_button
+  height: 190px
+  display: flex
+  justify-content: center
+  align-items: center
+  margin-bottom: 85px
+
+  .button
+    background-color: #f16d7f
+    text-decoration: none
+    color: #ffffff
+    font-family: Lato
+    font-size: 16px
+    font-weight: 700
+    letter-spacing: 0.4px
+    text-align: center
+    padding: 18px 24px 19px 24px
+
+.discount
+  display: flex
+  justify-content: center
+  margin-bottom: 97px
+
+.offer_women
+  background: url(img/Layer_38.png) top center / cover
+  width: 70%
+
+.text_offer
+  margin: 146px 435px 305px 39px
+  text-transform: uppercase
+
+.text_offer1
+  color: #ffffff
+  font-family: Lato
+  font-size: 54px
+  font-weight: 700
+
+  span
+    color: #f16d7f
+    letter-spacing: 1.5px
+    font-family: Lato
+    font-size: 54px
+    font-weight: 700
+
+.text_offer2
+  font-size: 32px
+  letter-spacing: 0.9px
+  color: #ffffff
+  font-family: Lato
+
+.delivery
+  background-color: #222224
+  width: 35%
+  display: flex
+  flex-direction: column
+  flex-wrap: wrap
+  justify-content: center
+  padding-top: 55px
+  padding-left: 35px
+
+.card
+  display: flex
+  flex-direction: column
+  width: 100%
+  align-items: center
+
+  p
+    color: #fbfbfb
+    font-family: Lato
+    font-size: 14px
+    font-weight: 300
+    line-height: 24px
+    letter-spacing: 0.35px
+    text-align: left
+    margin-bottom: 62px
+    width: 229px
+
+  h3
+    color: #fbfbfb
+    font-family: Lato
+    font-size: 20px
+    font-weight: 700
+    letter-spacing: 0.5px
+    text-align: left
+
+.card__img
+  background-size: 100%
+  background-repeat: no-repeat
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  align-items: flex-start
+  width: 100%
+
+.subscribe
+  background-image: url(img/Layer_41.png)
+  flex-direction: row
+  flex-wrap: nowrap
+  width: 100%
+  display: inline-flex
+  height: 438px
+
+.left_subscribe
+  flex-direction: column
+  flex-wrap: nowrap
+
+  img
+    width: 83px
+    height: 83px
+    text-align: left
+
+  figcaption
+    flex-direction: row
+    text-align: justify
+    color: #222224
+    font-family: Lato
+    font-size: 16px
+    font-style: italic
+    line-height: 26px
+    letter-spacing: 0.4px
+    margin-left: 20px
+    width: 386px
+    height: 68px
+    margin-bottom: 20px
+    padding-left: 80px
+
+figure
+  display: inline-flex
+  justify-content: center
+  align-items: center
+  margin-top: 123px
+
+.rectangle22
+  .rectangle
+    display: inline-flex
+    flex-direction: row
+    align-items: flex-start
+    justify-content: space-between
+    width: 38px
+    height: 4px
+
+figcaption
+  h1
+    color: #222222
+    font-family: Lato
+    font-size: 13px
+    font-weight: 400
+    text-transform: uppercase
+
+  p
+    color: #6f6e6e
+    font-family: Lato
+    font-size: 13px
+    font-weight: 300
+    line-height: 20px
+
+.burhan_text
+  p
+    color: #222224
+    font-family: "Lato Light"
+    font-size: 12px
+    font-weight: 300
+    letter-spacing: 0.3px
+    line-height: 14px
+    text-align: left
+
+  span
+    color: #f16d7f
+    font-family: Lato
+    font-size: 16px
+    font-weight: 700
+    font-family: "Lato - Bold"
+    letter-spacing: 0.4px
+    line-height: 26px
+    text-align: left
+
+.right_subscribe
+  width: 790px
+  flex-direction: column
+  display: flex
+  justify-content: center
+  align-items: center
+
+  p
+    color: #222224
+    font-family: Lato
+    font-size: 14px
+    font-weight: 400
+    text-transform: uppercase
+    letter-spacing: 0.35px
+    line-height: 24px
+    width: 100%
+    text-align: center
+
+  h1
+    color: #222224
+    font-family: Lato
+    font-size: 14px
+    font-weight: 400
+    font-size: 24px
+    letter-spacing: 0.6px
+    line-height: 54px
+    text-transform: uppercase
+    width: 277px
+    text-align: center
+
+    &:hover
+      transform: rotate(180deg)
+      transition: transform 1s
+
+fieldset
+  border: none
+  outline: none
+  height: 100%
+  width: 100%
+  display: flex
+  flex-direction: row
+
+form
+  display: flex
+  width: 334px
+  height: 46px
+  border-radius: 23px
+  background-color: #e1e1e1
+  justify-content: center
+  align-items: center
+  flex-wrap: nowrap
+  flex-direction: row
+  justify-content: space-between
+  margin-top: 45px
+
+.trending_size_form
+  margin-top: 0
+
+.button_subscribe
+  background-color: #f16d7f
+  height: 100%
+  padding: 18px 20px
+  align-self: flex-end
+  border-radius: 0 23px 23px 0
+  color: #ffffff
+  font-family: Lato
+  font-size: 14px
+  font-weight: 400
+  text-align: center
+  letter-spacing: 0.35px
+
+.input_email
+  background-color: transparent
+  border: none
+  outline: none
+  padding-left: 28px
+  opacity: 0.67
+  color: #222224
+  font-family: Lato
+  font-size: 14px
+  font-weight: 400
+  line-height: 54px
+  letter-spacing: 0.35px
+
+.footer
+  flex-direction: row
+  flex-wrap: nowrap
+  display: flex
+  justify-content: center
+  margin-top: 123px
+  margin-bottom: 90px
+
+.footer_brand
+  width: 427px
+
+  .article
+    padding-top: 41px
+    color: #898989
+    font-family: Lato
+    font-size: 14px
+    font-weight: 300
+    line-height: 24px
+    letter-spacing: 0.35px
+    width: 427px
+    text-align: left
+
+.footer_logo
+  transition: transform 1s
+
+  &:hover
+    transform: scale(1.5)
+
+.right_footer_part
+  display: inline-flex
+  flex-direction: row
+  justify-content: space-between
+  margin-left: 64px
+  padding-top: 25px
+  width: 100%
+
+.footer_menu1
+  flex-direction: row
+  flex-wrap: nowrap
+  width: 100%
+
+  li
+    width: 100%
+    justify-content: flex-start
+    align-items: flex-start
+    text-align: left
+
+.nav_menu1
+  flex-direction: column
+  width: 100%
+  align-items: flex-start
+  list-style-type: none
+
+  a
+    color: #898989
+    font-family: Lato
+    font-size: 16px
+    font-weight: 400
+    letter-spacing: 0.4px
+    line-height: 59px
+    letter-spacing: 0.4px
+    line-height: 42px
+    text-align: left
+
+.footer_company
+  margin-right: 129px
+
+  h1
+    color: #f16d7f
+    font-family: Lato
+    font-size: 18px
+    font-weight: 700
+    line-height: 26px
+    text-transform: uppercase
+    letter-spacing: 0.45px
+    margin-bottom: 45px
+
+.footer_information
+  margin-right: 80px
+  width: 100%
+  text-align: left
+
+  h1
+    color: #f16d7f
+    font-family: Lato
+    font-size: 18px
+    font-weight: 700
+    line-height: 26px
+    text-transform: uppercase
+    letter-spacing: 0.45px
+    margin-bottom: 45px
+
+.footer_shop
+  flex-direction: column
+  width: 100%
+  align-items: flex-start
+
+  h1
+    color: #f16d7f
+    font-family: Lato
+    font-size: 18px
+    font-weight: 700
+    line-height: 26px
+    text-transform: uppercase
+    letter-spacing: 0.45px
+    width: 154px
+    margin-bottom: 45px
+
+.footer_icons_content
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  width: 89%
+  align-items: center
+
+.soc_icons
+  width: 100%
+  height: 79px
+  background-color: #e6e6e6
+  display: flex
+  justify-content: center
+  flex-direction: row
+  align-items: center
+  padding-top: 28px
+
+.all_right
+  height: 14px
+  justify-content: center
+  align-items: center
+  margin-bottom: 30px
+
+  p
+    color: #7a7a7a
+    font-family: Lato
+    font-size: 16px
+    font-weight: 400
+    letter-spacing: 0.4px
+
+.twitter_icon
+  background-color: #f16d7f
+  padding: 10px
+  width: 32px
+  height: 32px
+
+.facebook_icon
+  width: 32px
+  height: 32px
+  background-color: #ffffff
+  padding: 10px
+
+.instagram_icon
+  width: 32px
+  height: 32px
+  background-color: #ffffff
+  padding: 10px
+
+.pinterest_icon
+  width: 32px
+  height: 32px
+  background-color: #ffffff
+  padding: 10px
+
+.google_icon
+  width: 32px
+  height: 32px
+  background-color: #ffffff
+  padding: 10px
+
+.new_arrivals
+  display: flex
+  flex-direction: row
+  height: 148px
+  background-color: #f8f3f4
+  width: 100%
+
+  h1
+    color: #f16d7f
+    font-family: "Lato - Black"
+    font-size: 24px
+    font-weight: 400
+    line-height: 20px
+    text-transform: uppercase
+    align-items: flex-start
+    text-align: center
+    width: 100%
+    margin-top: 65px
+    padding-right: 300px
+
+.left_arrivals
+  display: inline-flex
+  flex-direction: row
+  justify-content: flex-start
+  justify-content: space-around
+  width: 100%
+
+.right_arrivals
+  display: inline-flex
+  flex-direction: row
+  justify-content: flex-end
+  justify-content: space-around
+  width: 100%
+
+.nav_menu2
+  text-decoration: none
+  list-style-type: none
+  display: inline-flex
+  justify-content: space-around
+  justify-content: flex-end
+  margin-top: 69px
+  padding-left: 350px
+
+  a
+    color: #636363
+    font-size: 14px
+    line-height: 20px
+    text-transform: uppercase
+    font-family: "Lato - Light"
+    font-weight: 300
+
+  span
+    color: #f16d7f
+    font-size: 14px
+    font-weight: 700
+    line-height: 20px
+    text-transform: uppercase
+    font-family: "Lato - Bold"
+
+.trending
+  flex-direction: row
+  flex-wrap: nowrap
+  display: flex
+  margin-top: 70px
+  width: 100%
+  justify-content: center
+
+.sidebar
+  margin-right: 40px
+  background-color: #ffffff
+  height: 100%
+  justify-content: space-between
+  width: 25%
+
+  a
+    display: block
+    color: black
+    padding: 16px
+    text-decoration: none
+    color: #6f6e6e
+    font-family: Lato
+    font-size: 14px
+    font-weight: 700
+    line-height: 20px
+    text-transform: uppercase
+    border: 1px solid rgb(250, 242, 242)
+    border-left: 5px solid #f16d7f
+
+    &:hover
+      &:not(.active)
+        background-color: rgb(252, 246, 246)
+        color: black
+
+div
+  &.content
+    margin-left: 0
+
+.sub_menu
+  display: none
+  list-style-type: none
+  font-weight: 400
+
+  a
+    border: none
+    background-color: #fff
+    padding: 10px
+    color: #6f6e6e
+    font-family: Lato
+    font-size: 14px
+    font-weight: 400
+    line-height: 33px
+
+  .form
+    input
+      display: inline-flex
+      flex-direction: row
+      flex-wrap: nowrap
+      justify-content: flex-start
+      align-items: flex-start
+      text-align: left
+      margin-top: 40px
+
+  .checkout_button
+    padding-bottom: 10px
+
+  .register_button
+    margin-bottom: 35px
+
+.main_item_menu:focus ~ .sub_menu,
+.main_item_menu:active ~ .sub_menu,
+.sub_menu:hover
+  display: block
+
+.dropdown
+  display: inline-block
+  position: relative
+  overflow: hidden
+  background: url(img/arrow2.png) no-repeat white
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08)
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08)
+
+  &:before
+    border-top: none
+
+  &:after
+    margin-top: 7px
+    border-bottom: none
+
+.dropdown:before,
+.dropdown:after
+  content: ""
+  position: absolute
+  z-index: 2
+  top: 9px
+  right: 10px
+  width: 0
+  height: 0
+  pointer-events: none
+
+.dropdown-select
+  position: relative
+  width: 130%
+  margin: 0
+  padding: 6px 8px 6px 10px
+  height: 28px
+  line-height: 14px
+  font-size: 12px
+  text-shadow: 0 1px white
+  border: 0
+  border-radius: 0
+  -webkit-appearance: none
+
+  &:focus
+    z-index: 3
+
+  & > option
+    margin: 3px
+    padding: 6px 8px
+    text-shadow: none
+    background: #f2f2f2
+    cursor: pointer
+
+.lt-ie9
+  .dropdown
+    z-index: 1
+
+  .dropdown-select
+    z-index: -1
+
+    &:focus
+      z-index: 3
+
+@-moz-document url-prefix()
+  .dropdown-select
+    padding-left: 6px
+
+.trending_now
+  display: flex
+  width: 176px
+  height: 39px
+  flex-direction: column
+  align-items: flex-start
+
+.trending_a
+  color: #6f6e6e
+  font-family: Lato
+  font-size: 14px
+  font-weight: 700
+  line-height: 20px
+  text-transform: uppercase
+  list-style-type: none
+  margin-bottom: 10px
+
+.nav_menu3
+  list-style-type: none
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  width: 100%
+
+  a
+    display: inline
+    flex-wrap: wrap
+    color: #6f6e6e
+    font-family: Lato
+    font-size: 14px
+    font-weight: 400
+    line-height: 26px
+    color: #dfdfdf
+
+.trending_size
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+
+  form
+    background-color: #fff
+    color: #6f6e6e
+    font-family: "Open Sans"
+    font-size: 14px
+    font-weight: 400
+    line-height: 20px
+    text-transform: uppercase
+    width: 213px
+    height: 39px
+    justify-content: flex-start
+
+.trending_size_form__item
+  width: 25%
+  text-align: left
+
+.trending_price
+  width: 263px
+  height: 73px
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+
+.trending_sort
+  display: flex
+  flex-wrap: wrap
+  width: 100%
+  background-color: #f3f3f3
+  padding: 10px 0
+  margin-bottom: 40px
+  margin-top: 40px
+
+  button
+    width: 153px
+    height: 30px
+    border: 1px solid #ebebeb
+    background-color: #ffffff
+    margin-left: 8px
+
+.product_cards
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  flex-wrap: wrap
+
+.pages
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  flex-wrap: nowrap
+  margin-bottom: 100px
+  margin-top: 44px
+  width: 100%
+
+  a
+    color: #c4c4c4
+    font-family: Lato
+    font-size: 16px
+    font-weight: bold
+    line-height: 26px
+
+    span
+      color: #ef5b70
+
+.left_pages
+  display: flex
+  flex-direction: row
+  flex-wrap: nowrap
+  width: 50%
+  justify-content: flex-start
+
+.pages_ul
+  width: 261px
+  height: 44px
+  border-radius: 3px
+  border: 1px solid #ebebeb
+  background-color: #ffffff
+  vertical-align: baseline
+  list-style-type: none
+  display: flex
+  justify-content: space-around
+  align-items: center
+
+  li
+    display: inline-block
+
+.next_hidden
+  a
+    color: #ef5b70
+
+.right_view
+  display: flex
+  flex-direction: row
+  flex-wrap: nowrap
+  width: 50%
+  justify-content: flex-end
+
+  button
+    width: 150px
+    height: 44px
+    border-radius: 3px
+    border: 1px solid #ef5b70
+    background-color: #ffffff
+    align-items: flex-end
+    justify-content: flex-end
+
+    a
+      color: #ef5b70
+      font-family: Lato
+      font-size: 16px
+      font-weight: bold
+      line-height: 26px
+
+.free_delivery1
+  display: flex
+  flex-direction: row
+  flex-wrap: nowrap
+  justify-content: center
+  width: 100%
+  height: 341px
+  background: #222224 no-repeat
+  justify-content: center
+  padding-left: 35px
+
+  .card1__img
+    justify-content: center
+    align-items: center
+    justify-content: space-around
+    height: 50px
+    padding-top: 89px
+
+.card1
+  display: flex
+  flex-direction: column
+  width: 389px
+  justify-content: center
+  align-items: center
+  margin-top: 89px
+  margin-bottom: 115px
+
+.card1__p
+  color: #fbfbfb
+  font-family: Lato
+  font-size: 14px
+  font-weight: 300
+  line-height: 23.95px
+  justify-content: center
+  align-items: center
+  letter-spacing: 0.35px
+  width: 389px
+  padding-top: 5px
+  margin-bottom: 115px
+
+.card1__h3
+  color: #fbfbfb
+  font-family: Lato
+  font-size: 20px
+  font-weight: 700
+  letter-spacing: 0.5px
+  margin-top: 50px
+
+.product_art
+  display: flex
+  flex-direction: row
+  justify-content: flex-start
+
+.d-flex
+  display: flex
+
+.flex-row
+  flex-direction: row
+
+.cart
+  display: flex
+  flex-flow: column wrap
+  margin-bottom: 100px
+
+  .nav_menu
+    margin-top: 90px
+    justify-content: space-between
+
+.cart_heading
+  display: flex
+  flex-direction: row
+  border-bottom: 1px solid #eaeaea
+  width: 100%
+
+.nav_products
+  margin-left: 0 !important
+
+.cart_container_left
+  justify-content: flex-start
+  width: 50%
+
+  .nav_menu
+    margin-left: 30px
+
+.cart_container_right
+  justify-content: flex-end
+  width: 70%
+
+  .nav_menu
+    align-items: flex-end
+    justify-content: space-between
+    width: 70%
+    margin-left: 240px
+    padding-right: -70px
+    width: 100%
+
+.cart_description
+  display: flex
+  flex-direction: row
+  margin-top: 50px
+
+.cart_description_left
+  display: flex
+  justify-content: flex-start
+  width: 50%
+  flex-direction: column
+
+.cart_description_right
+  justify-content: space-between
+  width: 70%
+  display: inline-flex
+  flex-direction: row
+
+.cart_descriprion_item
+  display: flex
+  justify-content: center
+  align-items: center
+
+.price
+  display: flex
+  flex-flow: column nowrap
+
+.clear_continue
+  display: flex
+  width: 100%
+  justify-content: center
+
+  a
+    color: #4a4a4a
+    font-family: Lato
+    font-size: 14px
+    font-weight: 700
+    text-transform: uppercase
+
+.products_buttons
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  margin-bottom: 60px
+
+.product_button
+  width: 235px
+  height: 50px
+  border: 1px solid #eaeaea
+  background-color: #ffffff
+  display: flex
+  justify-content: center
+  align-items: center
+
+  a
+    color: #4a4a4a
+    font-family: Lato
+    font-size: 14px
+    font-weight: 700
+    text-transform: uppercase
+    text-align: center
+
+.left_clear_continue
+  flex-direction: row
+  justify-content: flex-start
+
+  .bottom
+    width: 235px
+    height: 50px
+    border: 1px solid #eaeaea
+    background-color: #ffffff
+
+.right_clear_continue
+  flex-direction: row
+  justify-content: flex-end
+
+  .bottom
+    width: 225px
+    height: 50px
+    border: 1px solid #eaeaea
+    background-color: #ffffff
+
+.checkout
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  margin-bottom: 79px
+
+.shipping_address
+  flex-direction: column
+  display: flex
+
+  h1
+    color: #222222
+    font-family: Lato
+    font-size: 16px
+    font-weight: 700
+    text-transform: uppercase
+    margin-bottom: 25px
+
+  form
+    width: 355px
+    height: 180px
+    background-color: #fff
+    flex-direction: column
+
+  input
+    width: 355px
+    height: 45px
+    border: 1px solid #eaeaea
+    background-color: #ffffff
+    margin-bottom: 20px
+    padding-left: 20px
+    color: #b1b1b1
+    font-family: Lato
+    font-size: 13px
+    font-weight: 300
+
+  .button
+    width: 100px
+    height: 35px
+    border: 1px solid #eaeaea
+    background-color: #ffffff
+
+    a
+      color: #4a4a4a
+      font-family: Lato
+      font-size: 11px
+      font-weight: 700
+      text-transform: uppercase
+
+.coupon_discount
+  flex-direction: column
+  display: flex
+
+  h1
+    color: #222222
+    font-family: Lato
+    font-size: 16px
+    font-weight: 700
+    text-transform: uppercase
+    margin-bottom: 30px
+
+  p
+    color: #000000
+    font-family: Lato
+    font-size: 14px
+    font-weight: 300
+
+  form
+    width: 355px
+    height: 45px
+    background-color: #ffffff
+    margin-bottom: 30px
+
+  input
+    color: #b1b1b1
+    font-family: Lato
+    font-size: 13px
+    font-weight: 300
+    width: 355px
+    height: 45px
+    border: 1px solid #eaeaea
+    padding-left: 20px
+
+  .button
+    width: 118px
+    height: 35px
+    border: 1px solid #eaeaea
+    background-color: #ffffff
+
+    a
+      color: #4a4a4a
+      font-family: Lato
+      font-size: 11px
+      font-weight: 700
+      text-transform: uppercase
+
+.grand_total
+  flex-direction: column
+  display: flex
+  width: 360px
+  height: 214px
+  background-color: #f5f3f3
+
+  form
+    width: 170px
+    height: 45px
+    background-color: #f5f3f3
+    border: none
+    flex-direction: column
+    border-bottom: 1px solid #e2e2e2
+    align-self: flex-end
+
+  input
+    background-color: #f5f3f3
+    border: none
+    color: #4a4a4a
+    font-family: Lato
+    font-size: 11px
+    font-weight: 400
+    text-transform: uppercase
+
+  .number1
+    color: #222222
+    font-family: Lato
+    font-size: 16px
+    font-weight: 700
+    text-transform: uppercase
+
+  .button
+    width: 273px
+    height: 50px
+    background-color: #f16d7f
+    margin-top: 18px
+    align-self: center
+    display: flex
+    justify-content: center
+    align-items: center
+    border-bottom: 2px solid #e9e1e1
+
+    a
+      color: #ffffff
+      font-family: Lato
+      font-size: 16px
+      font-weight: 700
+      text-transform: uppercase
+      display: flex
+      justify-content: center
+      align-items: center
+
+.registration
+  display: inline-flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  margin-top: 90px
+  margin-bottom: 90px
+  width: 100%
+
+.left_register
+  flex-direction: column
+  flex-wrap: nowrap
+  width: 50%
+  display: block
+  justify-content: flex-start
+
+  .check
+    padding-bottom: 0
+
+.menu4
+  position: absolute
+
+.menu4__list
+  line-height: 60px
+  position: relative
+
+  .register
+    margin-bottom: 10px
+    line-height: 10px
+
+.nav_menu4
+  list-style-type: decimal-leading-zero
+  color: #222222
+  font-family: Lato
+  font-size: 16px
+  font-weight: 700
+  text-transform: uppercase
+  justify-content: flex-start
+  align-items: flex-start
+  text-align: left
+  margin-left: 50px
+  margin-bottom: 125px
+
+  h1
+    color: #222222
+    font-family: Lato
+    font-size: 13px
+    font-weight: 400
+    text-transform: uppercase
+    margin-bottom: 2px
+    text-align: left
+
+  .register
+    color: #b3b2b2
+    font-family: Lato
+    font-size: 13px
+    font-weight: 400
+    text-transform: lowercase
+    text-align: left
+
+.time
+  padding-bottom: 10px
+
+.menu4__link
+  border-bottom: 1px solid #e9e1e1
+
+.nav_menu4
+  .sub_menu
+    display: none
+    font-weight: 400
+    justify-content: flex-start
+    align-items: flex-start
+    text-align: left
+    border-bottom: 2px solid #e9e1e1
+
+.menu4__list:focus ~ .sub_menu,
+.menu4__list:active ~ .sub_menu,
+.sub_menu:hover
+  display: block
+
+.button_continue
+  width: 180px
+  height: 50px
+  border: 1px solid #eaeaea
+  background-color: #ffffff
+  margin: 40px 0 100px
+  color: #4a4a4a
+  font-family: Lato
+  font-size: 14px
+  font-weight: 700
+  text-transform: uppercase
+
+.button_forgot
+  height: 12px
+  color: #222222
+  font-family: Lato
+  font-size: 14px
+  font-weight: 400
+  line-height: 20px
+  background-color: #fff
+  margin-left: 35px
+
+.right_registed
+  width: 50%
+  flex-direction: column
+  flex-wrap: nowrap
+  display: block
+  justify-content: flex-end
+  text-align: left
+  align-items: flex-end
+
+  h1
+    color: #222222
+    font-family: Lato
+    font-size: 13px
+    font-weight: 400
+    text-transform: uppercase
+    margin-top: 60px
+    margin-bottom: 15px
+
+  .register
+    color: #b3b2b2
+    font-family: Lato
+    font-size: 13px
+    font-weight: 400
+    line-height: 20px
+
+  .form
+    display: block
+    flex-direction: column
+    flex-wrap: nowrap
+    justify-content: flex-end
+    align-items: flex-end
+    text-align: left
+    width: 50%
+
+  fieldset
+    background-color: white
+
+  label
+    &:after
+      content: "✹"
+      color: red
+
+  input
+    width: 390px
+    height: 45px
+    border: 1px solid #eaeaea
+    background-color: #ffffff
+    margin-bottom: 40px
+
+  .required
+    color: #ff0d0d
+    font-family: Lato
+    font-size: 13px
+    font-weight: 400
+    margin-top: 125px
+
+.button_continue1
+  margin-top: 30px
+  width: 180px
+  height: 50px
+  border: 1px solid #eaeaea
+  background-color: #ffffff
+
+.figure
+  img
+    -webkit-animation: Myanimate 0.65s linear both
+    animation: Myanimate 0.65s linear both
+
+    =keyframes($name)
+@-webkit-keyframes myanimate
+0%
+  -webkit-transform: scale(1) rotateZ(0)
+  transform: scale(1) rotateZ(0)
+
+50%
+  -webkit-transform: scale(2) rotateZ(180deg)
+  transform: scale(2) rotateZ(180deg)
+
+100%
+  -webkit-transform: scale(1) rotateZ(360deg)
+  transform: scale(1) rotateZ(360deg)
+
+.chair
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  background-color: #f7f7f7
+
+.photo
+  display: inline-block
+  justify-content: center
+  align-items: center
+  background-image: url(img/Layer_42.png)
+  background-repeat: no-repeat
+  width: 100%
+  margin: 11px 0 42px
+
+.women_collection
+  width: 1141px
+  height: 730px
+  border: 1px solid #eaeaea
+  background-color: #ffffff
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  margin-top: -80px
+  position: relative
+
+.moschino
+  display: block
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  width: 618px
+  text-align: center
+  bottom: 20px
+
+  h1
+    color: #4d4d4d
+    font-family: "Lato - Black"
+    font-size: 18px
+    font-weight: 400
+    line-height: 24px
+    text-transform: uppercase
+    margin-bottom: 25px
+    padding-right: 10px
+
+  img
+    margin-bottom: 35px
+    justify-content: center
+    text-align: center
+
+  .lorem
+    color: #5e5e5e
+    font-family: Lato
+    font-size: 14px
+    font-weight: 300
+    line-height: 24px
+    text-align: justify
+    width: 618px
+    align-items: center
+    padding-bottom: 20px
+
+.collection
+  color: #f16d7f
+  font-family: Lato
+  font-size: 14px
+  font-weight: 700
+  line-height: 24px
+  text-transform: uppercase
+  margin-top: 73px
+  margin-bottom: 30px
+
+  &:hover
+    color: #f38494
+
+.cotton
+  margin-top: 30px
+  display: inline-flex
+  flex-direction: row
+  justify-content: space-between
+
+  .material
+    color: #b9b9b9
+    font-family: Lato
+    font-size: 14px
+    font-weight: 700
+    line-height: 24px
+    text-transform: uppercase
+    margin-right: 40px
+
+    span
+      color: #2f2f2f
+      font-family: Lato
+      font-size: 14px
+      font-weight: 700
+      line-height: 24px
+      text-transform: uppercase
+
+  .designer
+    color: #b9b9b9
+    font-family: Lato
+    font-size: 14px
+    font-weight: 700
+    line-height: 24px
+    text-transform: uppercase
+
+    span
+      color: #2f2f2f
+      font-family: Lato
+      font-size: 14px
+      font-weight: 700
+      line-height: 24px
+      text-transform: uppercase
+
+.price1_cart_descriprion_item
+  p
+    height: 24px
+    color: #ef5b70
+    font-family: Lato
+    font-size: 24px
+    font-weight: 700
+    line-height: 24px
+    border-bottom: 1px solid #e9e1e1
+    padding-bottom: 40px
+
+.cart_descriprion_item
+  input
+    border-bottom: 1px solid #e9e1e1
+    width: 144px
+    height: 35px
+    border: 1px solid #eaeaea
+    background-color: #ffffff
+    color: #bcbcbc
+    font-family: Lato
+    font-size: 14px
+    font-weight: 400
+    padding-left: 15px
+
+.choose
+  /*margin-top: 50px*/
+  display: inline-flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  text-align: center
+
+  FORM
+    background-color: #fff
+    justify-content: space-between
+    flex-direction: column
+    /*width: 100% */
+     margin-right: 65px
+
+  SELECT
+    width: 144px
+    height: 35px
+    border: 1px solid #eaeaea
+    background-color: #ffffff
+    justify-content: space-between
+    align-items: center
+    flex-direction: row
+    margin-right: 65px
+
+  choose_text
+    display: flex
+    justify-content: space-around
+    align-items: center
+    text-align: center
+    width: 45%
+    margin-bottom: -70px
+
+  p
+    color: #2f2f2f
+    font-family: 'Lato', sans-serif
+    font-size: 14px
+    font-weight: 700
+    text-transform: uppercase
+
+.button5
+  width: 537px
+  height: 55px
+  border: 1px solid #ef5b70
+  background-color: #ffffff
+  margin-top: 30px
+  margin-bottom: 120px
+  padding-bottom: 10px
+  justify-content: center
+  align-items: center
+  text-align: center
+
+  a
+    color: #ef5b70
+    font-family: Lato
+    font-size: 16px
+    font-weight: 700
+
+.like_cards
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  flex-wrap: wrap
+  margin-bottom: 60px
+
+  .like
+    color: #4d4d4d
+    font-family: "Lato - Black"
+    font-size: 24px
+    font-weight: 900
+    line-height: 20px
+    text-transform: uppercase
+    text-align: center
+    width: 100%
+    display: inline-flex
+    flex-direction: row
+    justify-content: center
+    margin-top: 120px
+
+.product_item
+  margin-top: 70px
